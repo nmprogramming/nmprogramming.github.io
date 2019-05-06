@@ -4,7 +4,7 @@ var result = document.getElementById('result');
 var previous = document.getElementById('previous')
 
 var passwords = [];
-if(window.localStorage.getItem("passwords") != "")
+if(window.localStorage.getItem("passwords") != null)
 {
   passwords = JSON.parse(window.localStorage.getItem("passwords"));
 }
